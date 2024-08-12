@@ -1,20 +1,26 @@
 {
-	"name": "start-wp",
+	"name": "empty-project",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
-	"scripts": {
-		"start": "wp-scripts start --hot",
-		"build": "wp-scripts build",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"minify-css": "postcss build/style-index.css -o dist/style-index.min.css --config postcss.config.js "
-	},
 	"keywords": [],
-	"author": "Kamil",
-	"license": "MIT",
+	"author": "",
+	"license": "ISC",
+	"scripts": {
+		"clean": "rm dist/bundle.js",
+		"build-dev": "webpack --mode development",
+		"build-prod": "webpack --mode production"
+	},
+	"dependencies": {},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.18.0",
-		"cssnano": "^6.0.1",
-		"postcss": "^8.4.32"
+		"webpack": "^5.93.0",
+		"webpack-cli": "^5.1.4",
+		"mini-css-extract-plugin": "^2.9.0",
+		"css-loader": "^7.1.2",
+		"style-loader": "^4.0.0",
+		"postcss-loader": "^8.1.1",
+		"autoprefixer": "^10.4.19",
+		"sass-loader": "^15.0.0",
+		"node-sass": "^9.0.0"
 	}
 }

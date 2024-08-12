@@ -1,29 +1,33 @@
-# WordPress Starter
+# empty-project
 
-It's the first step for all my new projects based on WordPress. With this configuration, you're ready to develop your own WordPress Theme.
+Empty project.
 
-## Usage
+## Building and running on localhost
 
----
+First install dependencies:
 
-1. `git clone`: Clone the repository for your local machine.
-2. `npm init`: Initialize package.json.
-3. `npm install`: Install dependencies.
+```sh
+npm install
+```
 
-## Technologies
+To create a production build:
 
----
+```sh
+npm run build-prod
+```
 
-The theme provides support for:
+To create a development build:
 
--   PHP
--   SCSS
--   POSTCSS
--   Minification
--   ES6 syntax
+```sh
+npm run build-dev
+```
 
-You are ready to go and build your...
+## Running
 
-![The Next Big Thing WordPress Starter Theme](screenshot.png)
+```sh
+node dist/bundle.js
+```
 
-Best regards, K.P (Dev);
+## Credits
+
+Made with [createapp.dev](https://createapp.dev/)

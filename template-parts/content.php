@@ -8,4 +8,7 @@
  */
 
 ?>
-<h1>Jestem kontent</h1>
+<div class="test">
+
+	<h1>Jestem kontent</h1>
+</div>
